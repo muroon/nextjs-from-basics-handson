@@ -6,22 +6,16 @@
             {
                 "languages": [
                     "javascript",
-                    "css",
-                    "markup",
-                    "bash",
-                    "graphql",
-                    "json",
-                    "markdown",
-                    "python",
                     "jsx",
-                    "tsx",
-                    "sql",
                     "typescript",
-                    "yaml",
-                    "rust",
-                    "java"
+                    "tsx",
+                    "css",
+                    "html"
                 ],
-                "plugins": [],
+                "plugins": [
+                    "line-numbers",
+                    "show-language"
+                ],
                 "theme": "tomorrow",
                 "css": true
             }
