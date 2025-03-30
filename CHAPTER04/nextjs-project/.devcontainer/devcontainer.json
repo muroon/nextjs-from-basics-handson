@@ -1,0 +1,15 @@
+{
+  "name": "Next.js Project",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "appPort": [3000],
+  "extensions": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.vscode-typescript-tslint-plugin"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "npm install"
+}
