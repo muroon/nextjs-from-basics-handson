@@ -195,10 +195,6 @@ export const getStaticProps: GetStaticProps<
 };
 
 const Home: NextPage<StaticProps> = ({ posts }) => {
-    useEffect(() => {
-        prism.highlightAll();
-    }, []);
-
     return (
         <Layout>
             {posts.map((post) => (
