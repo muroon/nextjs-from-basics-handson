@@ -34,6 +34,14 @@ export type Post = {
     contents: Content[];
 };
 
+// 日付フォーマット用のヘルパー関数を追加
+export const formatDate = (dateString: string | null): string => {
+    if (!dateString) return '';
+    // UTCの日時を使用して、サーバーとクライアント間で一貫した日時を表示
+    const date = new Date(dateString);
+    return date.toUTCString();
+};
+
 type StaticProps = {
     posts: Post[];
 };
